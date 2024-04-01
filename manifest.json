@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Testpad to text",
+  "version": "1.0",
+  "description": "Reads the questions( document.querySelectorAll('span p') ) on the current page.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "background": {
+    "service_worker": "background.js"
+  }
+}
