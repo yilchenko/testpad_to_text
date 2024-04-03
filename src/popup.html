@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testpad to text</title>
+    <title>Testpad via AI</title>
     <style>
       body {
         width: 600px;
@@ -12,9 +12,15 @@
     </style>
   </head>
   <body>
-    <h2>Testpad to text</h2>
+    <h2>Testpad via AI</h2>
     <pre id="htmlContent" style="text-wrap: wrap; width: 100%"></pre>
+    <pre
+      id="answerContent"
+      style="text-wrap: wrap; width: 100%; font-size: 15px; color: green"
+      ;
+    ></pre>
     <button id="copyButton">Copy Text</button>
+    <script src="../config.js"></script>
     <script src="popup.js"></script>
   </body>
 </html>

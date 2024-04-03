@@ -1,18 +1,18 @@
 {
   "manifest_version": 2,
-  "name": "Testpad to text",
+  "name": "Testpad via AI",
   "version": "1.0",
-  "description": "Reads the questions( document.querySelectorAll('span p') ) on the current page.",
+  "description": "Reads the questions( document.querySelectorAll('span p') ) on the current page and returs the answer from GPT 3.5 Turbo.",
   "permissions": ["activeTab", "storage", "scripting"],
   "browser_action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
+    "default_popup": "./src/popup.html",
+    "default_icon": "./assets/icon.png"
   },
   "icons": {
-    "48": "icon.png"
+    "48": "./assets/icon.png"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "./src/background.js"
   }
 }
