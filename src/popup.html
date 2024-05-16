@@ -11,15 +11,32 @@
       }
     </style>
   </head>
-  <body>
-    <h2>Testpad via AI</h2>
-    <pre id="htmlContent" style="text-wrap: wrap; width: 100%"></pre>
+  <body style="border-radius: 30%; background-color: rgba(255, 255, 255, 0.2)">
+    <h2 style="font-size: 25px">Testpad via AI 📚</h2>
+    <pre
+      id="htmlContent"
+      style="text-wrap: wrap; width: 100%; font-size: 15px"
+    ></pre>
     <pre
       id="answerContent"
-      style="text-wrap: wrap; width: 100%; font-size: 15px; color: green"
+      style="text-wrap: wrap; width: 100%; font-size: 25px; color: green"
       ;
     ></pre>
-    <button id="copyButton">Copy Text</button>
+    <div style="width: 100%; display: flex; justify-content: flex-end">
+      <button
+        style="
+          background-color: rgb(161, 212, 221);
+          padding: 10px 20px 10px 20px;
+          border-radius: 20px;
+          border-width: 0;
+          cursor: pointer;
+        "
+        id="copyButton"
+      >
+        Copy Text 📋
+      </button>
+    </div>
+
     <script src="../config.js"></script>
     <script src="popup.js"></script>
   </body>

@@ -6,7 +6,7 @@ chrome.runtime.sendMessage(
     if (response && response.result) {
       document.getElementById("htmlContent").textContent = response.result;
       const completion = await completeTextWithGPT(response.result);
-      document.getElementById("answerContent").textContent = completion;
+      document.getElementById("answerContent").innerHTML = completion;
     } else {
       document.getElementById("htmlContent").textContent =
         "No text content found!";

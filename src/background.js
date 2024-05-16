@@ -8,7 +8,8 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
               // Execute content extraction logic
               spanElementsWithPs = document.querySelectorAll('span p');
               spanTextContents = Array.from(spanElementsWithPs).map(p => p.textContent.trim());
-              extractedContent = spanTextContents.join('\\n');
+              extractedContent = spanTextContents.join('\\n ·');
+              
               extractedContent;
             `,
         },
